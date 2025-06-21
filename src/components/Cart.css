@@ -1,0 +1,259 @@
+.cart-modal .modal-content {
+  border-radius: 12px;
+  border: none;
+  overflow: hidden;
+}
+
+.cart-modal .modal-header {
+  padding: 1.5rem 1.5rem 0;
+  border-bottom: none;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #666;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.empty-cart {
+  padding: 2rem;
+}
+
+.empty-cart svg {
+  opacity: 0.3;
+}
+
+.cart-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.cart-items {
+  flex: 2;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item-image-container {
+  width: 120px;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.item-variants {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.item-price {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.quantity-button {
+  width: 32px;
+  height: 32px;
+  background: #f9f9f9;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+.quantity-button:hover {
+  background: #f0f0f0;
+}
+
+.quantity-value {
+  width: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.item-total {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.remove-item-button {
+  background: none;
+  border: none;
+  color: #999;
+  transition: color 0.3s ease;
+  padding: 0.25rem;
+}
+
+.remove-item-button:hover {
+  color: #e53935;
+}
+
+.order-summary {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+}
+
+.summary-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.checkout-button:hover {
+  background: #333;
+}
+
+.continue-shopping-btn {
+  width: 100%;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.continue-shopping-btn:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Scrollbar personalizada */
+.cart-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.cart-items::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cart-content {
+    flex-direction: column;
+  }
+  
+  .order-summary {
+    margin-top: 1.5rem;
+    position: static;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-item {
+    flex-direction: column;
+  }
+  
+  .item-image-container {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .cart-modal .modal-header {
+    padding: 1rem 1rem 0;
+  }
+  
+  .cart-modal .modal-title {
+    font-size: 1.5rem;
+  }
+}

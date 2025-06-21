@@ -1,0 +1,179 @@
+/* Estilos base */
+.navbar-elegance {
+  background-color: #1a1a1a !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-elegance .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.logo-main {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.logo-sub {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+/* Items de navegación */
+.nav-link {
+  position: relative;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0 !important;
+}
+
+.nav-link-inner {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link-inner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover .nav-link-inner::after {
+  width: 100%;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  color: #e0e0e0;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.collection-badge {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.collection-badge.women {
+  background-color: #ff6b81;
+}
+
+.collection-badge.men {
+  background-color: #70a1ff;
+}
+
+.collection-badge.kids {
+  background-color: #7bed9f;
+}
+
+/* Buscador */
+.search-container {
+  position: relative;
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.search-container:focus-within {
+  width: 250px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Botón del carrito */
+.cart-button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cart-button:hover {
+  color: #ddd;
+  transform: translateY(-2px);
+}
+
+.cart-icon {
+  transition: all 0.3s ease;
+}
+
+.cart-badge {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.65rem;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+  
+  .search-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+}
