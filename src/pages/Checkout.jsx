@@ -22,7 +22,7 @@ export default function Checkout() {
     },
     {
       id: 2,
-      name: 'Camisa formal blanca',
+      name: 'Camisa blanca',
       price: 59.99,
       quantity: 2,
       size: 'L',
