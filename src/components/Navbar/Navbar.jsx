@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Bag, Search } from 'react-bootstrap-icons';
 import { useState } from 'react';
-import Cart from './Cart';
+import Cart from '../Cart/Cart';
 import './Navbar.css'; // Archivo CSS adicional para estilos personalizados
 
 export default function Navbar() {

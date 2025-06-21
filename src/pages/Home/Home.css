@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora&display=swap');
+
+.home-page {
+  background-color: #fefefe;
+  font-family: 'Lora', serif;
+  color: #222;
+}
+
+/* Sección destacada */
+.home-featured {
+  padding: 4rem 0;
+  background-color: #fafafa;
+}
+
+.home-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1c1c1c;
+}
+
+.home-section-subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-section-title {
+    font-size: 2rem;
+  }
+
+  .home-featured {
+    padding: 3rem 1.5rem;
+  }
+}

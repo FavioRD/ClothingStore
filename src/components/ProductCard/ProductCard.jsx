@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Heart, Eye, Bag } from 'react-bootstrap-icons';
-import ProductModal from './ProductModal';
+import ProductModal from '../ProductModal/ProductModal';
 import './ProductCard.css';
 
 export default function ProductCard({ product }) {

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Container, Row, Col, Form, Button, Dropdown, Spinner } from 'react-bootstrap';
-import ProductCard from '../components/ProductCard';
+import ProductCard from '../../components/ProductCard/ProductCard';
 import { Funnel, Grid, List } from 'react-bootstrap-icons';
+import './Products.css';
 
-// Datos de ejemplo - en una app real vendrían de una API
+
+// Datos de ejemplo
 const allProducts = [
   {
     id: 1,

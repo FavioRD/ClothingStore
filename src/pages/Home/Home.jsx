@@ -1,6 +1,7 @@
-import PromoBanner from '../components/PromoBanner';
-import FeaturedProducts from '../components/FeaturedProducts';
-import CategorySection from '../components/CategorySection';
+import PromoBanner from '../../components/PromoBanner/PromoBanner';
+import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
+import CategorySection from '../../components/CategorySection/CategorySection';
+import './Home.css';
 
 // Datos de ejemplo - en una app real vendrían de una API
 const featuredProducts = [

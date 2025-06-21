@@ -1,0 +1,114 @@
+/* Tipografía refinada */
+.products-container {
+  font-family: 'Lora', serif;
+  color: #2a2a2a;
+}
+
+/* Encabezado */
+.products-header h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+}
+
+.products-header p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* Toggle botones */
+.view-toggle .btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.view-toggle .btn svg {
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+/* Lista vacía */
+.products-container .no-results {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.no-results h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-results p {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* Vista de cuadrícula */
+.product-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+}
+
+/* Vista de lista */
+.product-list-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-list-item:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.product-list-item h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.product-list-item p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-list-item .btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Precio */
+.product-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.product-price .original-price {
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Colores circulares */
+.color-circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 6px;
+  vertical-align: middle;
+}

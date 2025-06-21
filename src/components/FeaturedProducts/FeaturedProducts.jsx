@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProductCard from './ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 import './FeaturedProducts.css';
