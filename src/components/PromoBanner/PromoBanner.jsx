@@ -13,16 +13,16 @@ export default function PromoBanner() {
       id: 1,
       title: "Colección de Verano",
       subtitle: "Hasta 40% de descuento en selección de prendas",
-      image: "/images/summer-collection.jpg",
+      image: "https://concepto.de/wp-content/uploads/2018/08/verano1-e1535637769656.jpg",
       link: "/products?category=summer",
       cta: "Descubrir la colección",
-      theme: "light" // light o dark
+      theme: "light"
     },
     {
       id: 2,
       title: "Nuevos Ingresos",
       subtitle: "Descubre nuestras últimas tendencias para esta temporada",
-      image: "/images/new-arrivals.jpg",
+      image: "https://www.shutterstock.com/image-vector/promo-banner-healthy-lifestyle-natural-260nw-1996820612.jpg",
       link: "/products?sort=newest",
       cta: "Ver novedades",
       theme: "dark"
@@ -31,7 +31,7 @@ export default function PromoBanner() {
       id: 3,
       title: "Ofertas Exclusivas",
       subtitle: "Solo por tiempo limitado | Envío gratuito en pedidos superiores a $100",
-      image: "/images/exclusive-offers.jpg",
+      image: "https://www.shutterstock.com/image-vector/ad-banner-design-kids-clothes-260nw-2191568211.jpg",
       link: "/products?discount=gt30",
       cta: "Ver ofertas",
       theme: "light"

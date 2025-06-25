@@ -5,20 +5,26 @@
 
 .product-modal .modal-header {
   padding: 1.5rem 1.5rem 0;
+  border-bottom: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .close-button {
   background: none;
   border: none;
-  color: #333;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+  color: #666;
+  transition: color 0.3s ease;
   padding: 0.5rem;
-  margin-left: auto;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-button:hover {
-  opacity: 1;
+  color: #333;
 }
 
 .product-modal-image-container {
@@ -211,11 +217,11 @@
   .product-name {
     font-size: 1.5rem;
   }
-  
+
   .current-price {
     font-size: 1.25rem;
   }
-  
+
   .option-section {
     padding-top: 1rem;
   }

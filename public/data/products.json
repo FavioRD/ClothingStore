@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "name": "Blazer elegante negro",
+    "price": 129.99,
+    "salePrice": 99.99,
+    "onSale": true,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg",
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_004.jpg"
+    ],
+    "colors": ["Negro", "Azul marino", "Gris"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg",
+      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_004.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_005.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Blazer de alta calidad para ocasiones formales.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Vestido de noche largo",
+    "price": 159.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_006.jpg",
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_007.jpg"
+    ],
+    "colors": ["Rojo", "Negro", "Azul"],
+    "colorImages": {
+      "Rojo": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_006.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg",
+      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_007.jpg"
+    },
+    "sizes": ["XS", "S", "M", "L"],
+    "description": "Vestido elegante para eventos especiales.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Camisa formal blanca",
+    "price": 59.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_008.jpg",
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_009.jpg"
+    ],
+    "colors": ["Blanco", "Azul claro", "Rosa pálido"],
+    "colorImages": {
+      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_008.jpg",
+      "Azul claro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_009.jpg",
+      "Rosa pálido": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_010.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Camisa de algodón 100% para looks formales.",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Traje de niño formal",
+    "price": 79.99,
+    "salePrice": 69.99,
+    "onSale": true,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_011.jpg",
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_012.jpg"
+    ],
+    "colors": ["Azul marino", "Gris", "Negro"],
+    "colorImages": {
+      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_011.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_012.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg"
+    },
+    "sizes": ["4", "6", "8", "10"],
+    "description": "Traje elegante para ocasiones especiales.",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Pantalón de vestir",
+    "price": 89.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_013.jpg",
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_014.jpg"
+    ],
+    "colors": ["Negro", "Gris", "Azul marino"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_013.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_014.jpg",
+      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_011.jpg"
+    },
+    "sizes": ["30", "32", "34", "36"],
+    "description": "Pantalón formal de corte clásico.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Falda lápiz",
+    "price": 65.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_015.jpg",
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_016.jpg"
+    ],
+    "colors": ["Negro", "Gris", "Beige"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_015.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_016.jpg",
+      "Beige": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_017.jpg"
+    },
+    "sizes": ["XS", "S", "M", "L"],
+    "description": "Falda profesional para el entorno laboral.",
+    "featured": true
+  }
+]

@@ -1,13 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Spinner } from 'react-bootstrap';
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 import './FeaturedProducts.css';
 
-export default function FeaturedProducts({ products }) {
+export default function FeaturedProducts() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState('all');
-  
-  // Filtros disponibles
+
   const filters = [
     { id: 'all', label: 'Todos' },
     { id: 'women', label: 'Mujer' },
@@ -16,28 +17,37 @@ export default function FeaturedProducts({ products }) {
     { id: 'sale', label: 'Ofertas' }
   ];
 
-  // Filtrar productos según selección
-  const filteredProducts = activeFilter === 'all' 
-    ? products 
+  // Cargar productos destacados
+  useEffect(() => {
+    fetch('/data/products.json')
+      .then(res => res.json())
+      .then(data => {
+        const destacados = data.filter(p => p.featured);
+        setProducts(destacados);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error al cargar productos:', error);
+        setLoading(false);
+      });
+  }, []);
+
+  const filteredProducts = activeFilter === 'all'
+    ? products
     : activeFilter === 'sale'
       ? products.filter(p => p.onSale)
       : products.filter(p => p.category === activeFilter);
 
-  // Carrusel de productos (versión simplificada)
   const [currentIndex, setCurrentIndex] = useState(0);
   const productsPerPage = 3;
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-  
+
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex + 1) % totalPages
-    );
+    setCurrentIndex((prev) => (prev + 1) % totalPages);
   };
-  
+
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex - 1 + totalPages) % totalPages
-    );
+    setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
   };
 
   const visibleProducts = filteredProducts.slice(
@@ -45,13 +55,22 @@ export default function FeaturedProducts({ products }) {
     (currentIndex + 1) * productsPerPage
   );
 
+  if (loading) {
+    return (
+      <Container className="text-center py-5">
+        <Spinner animation="border" />
+        <p className="mt-3">Cargando productos destacados...</p>
+      </Container>
+    );
+  }
+
   return (
     <section className="featured-products-section">
       <Container>
         <div className="section-header">
           <h2 className="section-title">Colecciones Destacadas</h2>
           <p className="section-subtitle">Descubre nuestras piezas más exclusivas</p>
-          
+
           <div className="filters-container">
             {filters.map(filter => (
               <button
@@ -70,16 +89,11 @@ export default function FeaturedProducts({ products }) {
 
         <Row className="products-row">
           <Col xs={1} className="d-flex align-items-center justify-content-center">
-            <Button 
-              variant="link" 
-              className="nav-arrow"
-              onClick={prevSlide}
-              disabled={currentIndex === 0}
-            >
+            <Button variant="link" className="nav-arrow" onClick={prevSlide} disabled={currentIndex === 0}>
               <ChevronLeft size={24} />
             </Button>
           </Col>
-          
+
           <Col xs={10}>
             <Row className="justify-content-center">
               {visibleProducts.length > 0 ? (
@@ -95,12 +109,12 @@ export default function FeaturedProducts({ products }) {
               )}
             </Row>
           </Col>
-          
+
           <Col xs={1} className="d-flex align-items-center justify-content-center">
             <Button 
               variant="link" 
-              className="nav-arrow"
-              onClick={nextSlide}
+              className="nav-arrow" 
+              onClick={nextSlide} 
               disabled={currentIndex >= totalPages - 1}
             >
               <ChevronRight size={24} />

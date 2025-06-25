@@ -1,0 +1,18 @@
+.Toastify__toast--success {
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #28a745;
+}
+
+.Toastify__toast-body {
+  display: flex;
+  align-items: center;
+}
+
+.Toastify__progress-bar {
+  background: #28a745;
+}

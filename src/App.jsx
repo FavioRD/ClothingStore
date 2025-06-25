@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { ToastContainer } from 'react-toastify';
+import './ToastStyles.css';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
 import Checkout from './pages/Checkout/Checkout';
@@ -20,9 +23,11 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
       </div>
     </Router>
   );
 }
+
 
 export default App;
