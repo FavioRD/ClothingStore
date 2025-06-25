@@ -1,0 +1,63 @@
+footer {
+  background-color: #111; /* negro elegante */
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+footer .text-muted {
+  color: #ccc !important;
+}
+
+footer h6 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer .letter-spacing-1 {
+  letter-spacing: 1px;
+}
+footer .letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #d4af37; /* dorado sutil */
+}
+
+footer .btn {
+  color: #fff;
+  border-color: #ccc;
+}
+
+footer .btn:hover {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: #111;
+}
+
+footer .form-control {
+  border-color: #666;
+  color: #fff;
+}
+
+footer .form-control::placeholder {
+  color: #aaa;
+}
+
+footer .payment-icon {
+  filter: grayscale(100%) brightness(200%);
+  height: 25px;
+  object-fit: contain;
+}
+
+footer hr {
+  border-top: 1px solid #333;
+}

@@ -1,6 +1,7 @@
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import { Facebook, Instagram, Twitter, Pinterest, Linkedin } from 'react-bootstrap-icons';
 import { useState } from 'react';
+import './Footer.css';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
