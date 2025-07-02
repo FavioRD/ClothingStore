@@ -5,16 +5,14 @@
     "price": 129.99,
     "salePrice": 99.99,
     "onSale": true,
-    "category": "women",
+    "category": "men",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg",
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_004.jpg"
+      "https://home.ripley.com.pe/Attachment/WOP_5/2067314298446/2067314298446-4.jpg",
+      "https://home.ripley.com.pe/Attachment/WOP_5/2067314298446/2067314298446-2.jpg"
     ],
-    "colors": ["Negro", "Azul marino", "Gris"],
+    "colors": ["Negro"],
     "colorImages": {
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg",
-      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_004.jpg",
-      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_005.jpg"
+      "Negro": "https://home.ripley.com.pe/Attachment/WOP_5/2067314298446/2067314298446-1.jpg"
     },
     "sizes": ["S", "M", "L", "XL"],
     "description": "Blazer de alta calidad para ocasiones formales.",
@@ -27,14 +25,14 @@
     "onSale": false,
     "category": "women",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_006.jpg",
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_007.jpg"
+      "https://media.falabella.com/falabellaPE/138760596_071/w=1500,h=1500,fit=pad",
+      "https://media.falabella.com/falabellaPE/138760596_05/w=1500,h=1500,fit=pad"
     ],
     "colors": ["Rojo", "Negro", "Azul"],
     "colorImages": {
-      "Rojo": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_006.jpg",
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg",
-      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_007.jpg"
+      "Rojo": "https://media.falabella.com/falabellaPE/138760604_01/w=1500,h=1500,fit=pad",
+      "Negro": "https://media.falabella.com/falabellaPE/138760603_061/w=1500,h=1500,fit=pad",
+      "Azul": "https://media.falabella.com/falabellaPE/138760593_071/w=1500,h=1500,fit=pad"
     },
     "sizes": ["XS", "S", "M", "L"],
     "description": "Vestido elegante para eventos especiales.",
@@ -47,14 +45,14 @@
     "onSale": false,
     "category": "men",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_008.jpg",
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_009.jpg"
+      "https://media.falabella.com/falabellaPE/883269338_3/w=1004,h=1500,fit=cover",
+      "https://media.falabella.com/falabellaPE/883269338_4/w=1004,h=1500,fit=cover"
     ],
-    "colors": ["Blanco", "Azul claro", "Rosa pálido"],
+    "colors": ["Blanco", "Celeste", "Rosa pálido"],
     "colorImages": {
-      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_008.jpg",
-      "Azul claro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_009.jpg",
-      "Rosa pálido": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_010.jpg"
+      "Blanco": "https://media.falabella.com/falabellaPE/883269338_1/w=1004,h=1500,fit=cover",
+      "Celeste": "https://media.falabella.com/falabellaPE/883269335_1/w=1004,h=1500,fit=cover",
+      "Rosa pálido": "https://media.falabella.com/falabellaPE/883269358_1/w=1004,h=1500,fit=cover"
     },
     "sizes": ["S", "M", "L", "XL"],
     "description": "Camisa de algodón 100% para looks formales.",
@@ -68,14 +66,14 @@
     "onSale": true,
     "category": "kids",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_011.jpg",
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_012.jpg"
+      "https://media.falabella.com/falabellaPE/5040120_2/w=1500,h=1500,fit=pad",
+      "https://media.falabella.com/falabellaPE/5040119_2/w=1500,h=1500,fit=pad"
     ],
-    "colors": ["Azul marino", "Gris", "Negro"],
+    "colors": ["Azul marino", "Beige", "Blanco"],
     "colorImages": {
-      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_011.jpg",
-      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_012.jpg",
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg"
+      "Beige": "https://media.falabella.com/falabellaPE/127356393_01/w=1500,h=1500,fit=pad",
+      "Azul marino": "https://media.falabella.com/falabellaPE/127950186_1/w=1500,h=1500,fit=pad",
+      "Blanco": "https://media.falabella.com/falabellaPE/127950192_1/w=1500,h=1500,fit=pad"
     },
     "sizes": ["4", "6", "8", "10"],
     "description": "Traje elegante para ocasiones especiales.",
@@ -88,14 +86,14 @@
     "onSale": false,
     "category": "men",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_013.jpg",
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_014.jpg"
+      "https://media.falabella.com/falabellaPE/882771216_5/w=1004,h=1500,fit=cover",
+      "https://media.falabella.com/falabellaPE/882771215_5/w=1004,h=1500,fit=cover"
     ],
     "colors": ["Negro", "Gris", "Azul marino"],
     "colorImages": {
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_013.jpg",
-      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_014.jpg",
-      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_011.jpg"
+      "Negro": "https://media.falabella.com/falabellaPE/882771211_1/w=1004,h=1500,fit=cover",
+      "Gris": "https://media.falabella.com/falabellaPE/882771216_1/w=1004,h=1500,fit=cover",
+      "Azul marino": "https://media.falabella.com/falabellaPE/882771215_1/w=1004,h=1500,fit=cover"
     },
     "sizes": ["30", "32", "34", "36"],
     "description": "Pantalón formal de corte clásico.",
@@ -103,19 +101,19 @@
   },
   {
     "id": 6,
-    "name": "Falda lápiz",
+    "name": "Casaca Mujer Zafin",
     "price": 65.99,
     "onSale": false,
     "category": "women",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_015.jpg",
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_016.jpg"
+      "https://oechsle.vteximg.com.br/arquivos/ids/21298901-1000-1000/2765473_3.jpg?v=638850963269300000",
+      "https://oechsle.vteximg.com.br/arquivos/ids/21298897-1000-1000/2765465_3.jpg?v=638850963253000000"
     ],
-    "colors": ["Negro", "Gris", "Beige"],
+    "colors": ["Azul", "Morado", "Beige"],
     "colorImages": {
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_015.jpg",
-      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_016.jpg",
-      "Beige": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_017.jpg"
+      "Azul": "https://oechsle.vteximg.com.br/arquivos/ids/21298894-1000-1000/2765465.jpg?v=638850963243000000",
+      "Morado": "https://oechsle.vteximg.com.br/arquivos/ids/21298898-1000-1000/2765473.jpg?v=638850963260730000",
+      "Beige": "https://oechsle.vteximg.com.br/arquivos/ids/21298890-1000-1000/2765469.jpg?v=638850963225530000"
     },
     "sizes": ["XS", "S", "M", "L"],
     "description": "Falda profesional para el entorno laboral.",
@@ -129,12 +127,12 @@
     "salePrice": 119.99,
     "category": "women",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_018.jpg"
+      "https://media.falabella.com/falabellaPE/20914977_4/w=1004,h=1500,fit=cover",
+      "https://media.falabella.com/falabellaPE/20914977_2/w=1004,h=1500,fit=cover"
     ],
-    "colors": ["Negro", "Marrón"],
+    "colors": ["Negro"],
     "colorImages": {
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_018.jpg",
-      "Marrón": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_019.jpg"
+      "Negro": "https://media.falabella.com/falabellaPE/20914977_1/w=1004,h=1500,fit=cover"
     },
     "sizes": ["S", "M", "L"],
     "description": "Chaqueta de cuero sintético con diseño moderno.",
@@ -147,12 +145,12 @@
     "onSale": false,
     "category": "men",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_020.jpg"
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2005352208799/image1-2005352208799.jpg",
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2005352208799/image2-2005352208799.jpg"
     ],
-    "colors": ["Azul", "Blanco"],
+    "colors": ["Azul"],
     "colorImages": {
-      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_020.jpg",
-      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_008.jpg"
+      "Azul": "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2005352208799/full_image-2005352208799.jpg"
     },
     "sizes": ["M", "L", "XL"],
     "description": "Camisa versátil para uso diario.",
@@ -165,12 +163,12 @@
     "onSale": false,
     "category": "women",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_021.jpg"
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/3467/PMP20000581042/full_image-5.jpeg",
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/3467/PMP20000581042/imagen2-5.jpeg"
     ],
-    "colors": ["Rojo floral", "Azul floral"],
+    "colors": ["Multicolor"],
     "colorImages": {
-      "Rojo floral": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_021.jpg",
-      "Azul floral": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_022.jpg"
+      "Multicolor": "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/3467/PMP20000581042/imagen3-5.jpeg"
     },
     "sizes": ["XS", "S", "M"],
     "description": "Vestido fresco y moderno ideal para primavera.",
@@ -183,12 +181,14 @@
     "onSale": false,
     "category": "kids",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_023.jpg"
+      "https://media.falabella.com/falabellaPE/883292459_4/w=1004,h=1500,fit=cover",
+      "https://media.falabella.com/falabellaPE/883292459_2/w=1004,h=1500,fit=cover"
     ],
-    "colors": ["Gris", "Verde militar"],
+    "colors": ["Negro", "Rojo", "Verde oliva"],
     "colorImages": {
-      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_023.jpg",
-      "Verde militar": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_024.jpg"
+      "Negro": "https://media.falabella.com/falabellaPE/883292469_1/w=1004,h=1500,fit=cover",
+      "Rojo": "https://media.falabella.com/falabellaPE/883292474_1/w=1004,h=1500,fit=cover",
+      "Verde oliva": "https://media.falabella.com/falabellaPE/883292459_1/w=1004,h=1500,fit=cover"
     },
     "sizes": ["6", "8", "10", "12"],
     "description": "Abrigo térmico con capucha y cierre frontal.",
@@ -201,12 +201,14 @@
     "onSale": false,
     "category": "men",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_025.jpg"
+      "https://media.falabella.com/falabellaPE/139947821_02/w=1500,h=1500,fit=pad",
+      "https://media.falabella.com/falabellaPE/139947821_04/w=1500,h=1500,fit=pad"
     ],
-    "colors": ["Negro", "Marrón"],
+    "colors": ["Negro", "Beige", "Rojo"],
     "colorImages": {
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_025.jpg",
-      "Marrón": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_026.jpg"
+      "Negro": "https://media.falabella.com/falabellaPE/139947832_01/w=1500,h=1500,fit=pad",
+      "Beige": "https://media.falabella.com/falabellaPE/139947821_01/w=1500,h=1500,fit=pad",
+      "Rojo": "https://media.falabella.com/falabellaPE/139947858_01/w=1500,h=1500,fit=pad"
     },
     "sizes": ["40", "41", "42", "43"],
     "description": "Calzado clásico para un look profesional impecable.",
@@ -220,12 +222,13 @@
     "salePrice": 54.99,
     "category": "women",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_027.jpg"
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2969/PMP20000451829/imagen3-7.jpeg",
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2969/PMP20000451829/imagen4-7.jpeg"
     ],
-    "colors": ["Champán", "Rosa pastel"],
+    "colors": ["Rosa", "Beige"],
     "colorImages": {
-      "Champán": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_027.jpg",
-      "Rosa pastel": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_028.jpg"
+      "Rosa": "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2969/PMP20000451829/full_image-7.jpeg",
+      "Beige": "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2969/PMP20000451829/full_image-2.jpeg"
     },
     "sizes": ["XS", "S", "M", "L"],
     "description": "Blusa de satén con acabado brillante y detalle en el cuello.",
@@ -303,6 +306,298 @@
     },
     "sizes": ["S", "M", "L", "XL"],
     "description": "Polera cómoda para uso diario con algodón suave.",
+    "featured": false
+  },
+  {
+    "id": 17,
+    "name": "Abrigo largo de lana",
+    "price": 189.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_038.jpg"
+    ],
+    "colors": ["Camel", "Negro"],
+    "colorImages": {
+      "Camel": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_038.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_003.jpg"
+    },
+    "sizes": ["S", "M", "L"],
+    "description": "Abrigo elegante ideal para el invierno.",
+    "featured": true
+  },
+  {
+    "id": 18,
+    "name": "Camisa casual con botones",
+    "price": 49.99,
+    "onSale": true,
+    "salePrice": 39.99,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_039.jpg"
+    ],
+    "colors": ["Azul", "Verde oliva"],
+    "colorImages": {
+      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_039.jpg",
+      "Verde oliva": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_040.jpg"
+    },
+    "sizes": ["M", "L", "XL"],
+    "description": "Camisa cómoda y versátil para el día a día.",
+    "featured": false
+  },
+  {
+    "id": 19,
+    "name": "Chaqueta impermeable niño",
+    "price": 59.99,
+    "onSale": false,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_041.jpg"
+    ],
+    "colors": ["Rojo", "Azul"],
+    "colorImages": {
+      "Rojo": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_041.jpg",
+      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_042.jpg"
+    },
+    "sizes": ["6", "8", "10", "12"],
+    "description": "Chaqueta resistente al agua para niños activos.",
+    "featured": true
+  },
+  {
+    "id": 20,
+    "name": "Falda plisada midi",
+    "price": 72.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_043.jpg"
+    ],
+    "colors": ["Gris perla", "Negro"],
+    "colorImages": {
+      "Gris perla": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_043.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_015.jpg"
+    },
+    "sizes": ["XS", "S", "M", "L"],
+    "description": "Falda elegante y moderna para cualquier ocasión.",
+    "featured": false
+  },
+  {
+    "id": 21,
+    "name": "Polo clásico hombre",
+    "price": 34.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_044.jpg"
+    ],
+    "colors": ["Blanco", "Azul marino"],
+    "colorImages": {
+      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_044.jpg",
+      "Azul marino": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_045.jpg"
+    },
+    "sizes": ["M", "L", "XL", "XXL"],
+    "description": "Polo cómodo y versátil para ocasiones casuales.",
+    "featured": false
+  },
+  {
+    "id": 22,
+    "name": "Mono elegante sin mangas",
+    "price": 89.99,
+    "onSale": true,
+    "salePrice": 69.99,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_046.jpg"
+    ],
+    "colors": ["Negro", "Verde botella"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_046.jpg",
+      "Verde botella": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_047.jpg"
+    },
+    "sizes": ["S", "M", "L"],
+    "description": "Mono sofisticado con corte moderno y cómodo.",
+    "featured": true
+  },
+  {
+    "id": 23,
+    "name": "Short deportivo niño",
+    "price": 25.99,
+    "onSale": false,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_048.jpg"
+    ],
+    "colors": ["Negro", "Gris"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_048.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_049.jpg"
+    },
+    "sizes": ["6", "8", "10", "12"],
+    "description": "Short ligero y transpirable ideal para jugar.",
+    "featured": false
+  },
+  {
+    "id": 24,
+    "name": "Camisa oversize de lino",
+    "price": 64.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_050.jpg"
+    ],
+    "colors": ["Blanco", "Beige"],
+    "colorImages": {
+      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_050.jpg",
+      "Beige": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_017.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Camisa fresca con tejido natural ideal para verano.",
+    "featured": false
+  },
+  {
+    "id": 25,
+    "name": "Sudadera con capucha",
+    "price": 54.99,
+    "onSale": true,
+    "salePrice": 44.99,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_051.jpg"
+    ],
+    "colors": ["Gris", "Negro"],
+    "colorImages": {
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_051.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_052.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Sudadera suave con interior afelpado.",
+    "featured": false
+  },
+  {
+    "id": 26,
+    "name": "Sandalias niña con brillo",
+    "price": 29.99,
+    "onSale": false,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_053.jpg"
+    ],
+    "colors": ["Rosa", "Plata"],
+    "colorImages": {
+      "Rosa": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_053.jpg",
+      "Plata": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_054.jpg"
+    },
+    "sizes": ["24", "26", "28", "30"],
+    "description": "Sandalias con diseño divertido y cómodo.",
+    "featured": true
+  },
+  {
+    "id": 27,
+    "name": "Top con escote cuadrado",
+    "price": 39.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_055.jpg"
+    ],
+    "colors": ["Rojo", "Negro"],
+    "colorImages": {
+      "Rojo": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_055.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_036.jpg"
+    },
+    "sizes": ["XS", "S", "M", "L"],
+    "description": "Top de moda con diseño clásico.",
+    "featured": false
+  },
+  {
+    "id": 28,
+    "name": "Chaleco ejecutivo hombre",
+    "price": 69.99,
+    "onSale": true,
+    "salePrice": 55.99,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_056.jpg"
+    ],
+    "colors": ["Negro", "Gris oscuro"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_056.jpg",
+      "Gris oscuro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_057.jpg"
+    },
+    "sizes": ["M", "L", "XL"],
+    "description": "Chaleco formal ideal para reuniones y eventos.",
+    "featured": false
+  },
+  {
+    "id": 29,
+    "name": "Chaqueta niña polar",
+    "price": 49.99,
+    "onSale": false,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_058.jpg"
+    ],
+    "colors": ["Lila", "Rosa"],
+    "colorImages": {
+      "Lila": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_058.jpg",
+      "Rosa": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_031.jpg"
+    },
+    "sizes": ["4", "6", "8", "10"],
+    "description": "Chaqueta térmica para mantener el calor.",
+    "featured": true
+  },
+  {
+    "id": 30,
+    "name": "Jean recto hombre",
+    "price": 64.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_059.jpg"
+    ],
+    "colors": ["Azul claro", "Azul oscuro"],
+    "colorImages": {
+      "Azul claro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_059.jpg",
+      "Azul oscuro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_060.jpg"
+    },
+    "sizes": ["30", "32", "34", "36"],
+    "description": "Jean clásico para todos los días.",
+    "featured": false
+  },
+  {
+    "id": 31,
+    "name": "Blazer estructurado mujer",
+    "price": 119.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_061.jpg"
+    ],
+    "colors": ["Negro", "Beige"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_061.jpg",
+      "Beige": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_017.jpg"
+    },
+    "sizes": ["S", "M", "L"],
+    "description": "Blazer con diseño entallado y elegante.",
+    "featured": true
+  },
+  {
+    "id": 32,
+    "name": "Pijama niño algodón",
+    "price": 34.99,
+    "onSale": false,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_062.jpg"
+    ],
+    "colors": ["Azul", "Gris"],
+    "colorImages": {
+      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_062.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_051.jpg"
+    },
+    "sizes": ["6", "8", "10", "12"],
+    "description": "Pijama suave ideal para dormir cómodo.",
     "featured": false
   }
 ]
