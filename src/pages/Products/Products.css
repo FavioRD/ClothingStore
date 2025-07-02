@@ -112,3 +112,12 @@
   margin-right: 6px;
   vertical-align: middle;
 }
+
+/* Tamaño uniforme de imagen en vista de lista */
+.product-list-item img {
+  width: 100%;
+  max-width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
