@@ -120,5 +120,189 @@
     "sizes": ["XS", "S", "M", "L"],
     "description": "Falda profesional para el entorno laboral.",
     "featured": true
+  },
+  {
+    "id": 7,
+    "name": "Chaqueta corta de cuero",
+    "price": 149.99,
+    "onSale": true,
+    "salePrice": 119.99,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_018.jpg"
+    ],
+    "colors": ["Negro", "Marrón"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_018.jpg",
+      "Marrón": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_019.jpg"
+    },
+    "sizes": ["S", "M", "L"],
+    "description": "Chaqueta de cuero sintético con diseño moderno.",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "name": "Camisa casual azul",
+    "price": 49.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_020.jpg"
+    ],
+    "colors": ["Azul", "Blanco"],
+    "colorImages": {
+      "Azul": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_020.jpg",
+      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_008.jpg"
+    },
+    "sizes": ["M", "L", "XL"],
+    "description": "Camisa versátil para uso diario.",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "name": "Vestido floral corto",
+    "price": 89.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_021.jpg"
+    ],
+    "colors": ["Rojo floral", "Azul floral"],
+    "colorImages": {
+      "Rojo floral": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_021.jpg",
+      "Azul floral": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_022.jpg"
+    },
+    "sizes": ["XS", "S", "M"],
+    "description": "Vestido fresco y moderno ideal para primavera.",
+    "featured": true
+  },
+  {
+    "id": 10,
+    "name": "Chaqueta de invierno para niño",
+    "price": 59.99,
+    "onSale": false,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_023.jpg"
+    ],
+    "colors": ["Gris", "Verde militar"],
+    "colorImages": {
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_023.jpg",
+      "Verde militar": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_024.jpg"
+    },
+    "sizes": ["6", "8", "10", "12"],
+    "description": "Abrigo térmico con capucha y cierre frontal.",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Zapatos oxford de cuero",
+    "price": 109.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_025.jpg"
+    ],
+    "colors": ["Negro", "Marrón"],
+    "colorImages": {
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_025.jpg",
+      "Marrón": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_026.jpg"
+    },
+    "sizes": ["40", "41", "42", "43"],
+    "description": "Calzado clásico para un look profesional impecable.",
+    "featured": true
+  },
+  {
+    "id": 12,
+    "name": "Blusa satén con lazo",
+    "price": 69.99,
+    "onSale": true,
+    "salePrice": 54.99,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_027.jpg"
+    ],
+    "colors": ["Champán", "Rosa pastel"],
+    "colorImages": {
+      "Champán": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_027.jpg",
+      "Rosa pastel": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_028.jpg"
+    },
+    "sizes": ["XS", "S", "M", "L"],
+    "description": "Blusa de satén con acabado brillante y detalle en el cuello.",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "Chaleco acolchado",
+    "price": 74.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_029.jpg"
+    ],
+    "colors": ["Azul oscuro", "Negro"],
+    "colorImages": {
+      "Azul oscuro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_029.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_030.jpg"
+    },
+    "sizes": ["M", "L", "XL"],
+    "description": "Chaleco térmico ligero ideal para capas exteriores.",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Vestido de niña con vuelo",
+    "price": 49.99,
+    "onSale": true,
+    "salePrice": 39.99,
+    "category": "kids",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_031.jpg"
+    ],
+    "colors": ["Rosa", "Celeste"],
+    "colorImages": {
+      "Rosa": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_031.jpg",
+      "Celeste": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_032.jpg"
+    },
+    "sizes": ["4", "6", "8", "10"],
+    "description": "Vestido alegre y cómodo para niñas.",
+    "featured": true
+  },
+  {
+    "id": 15,
+    "name": "Cardigan largo de punto",
+    "price": 79.99,
+    "onSale": false,
+    "category": "women",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_033.jpg"
+    ],
+    "colors": ["Beige", "Gris claro"],
+    "colorImages": {
+      "Beige": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_033.jpg",
+      "Gris claro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_034.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Cardigan suave y elegante ideal para entretiempo.",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "Polera básica de algodón",
+    "price": 24.99,
+    "onSale": false,
+    "category": "men",
+    "images": [
+      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_035.jpg"
+    ],
+    "colors": ["Blanco", "Negro", "Gris"],
+    "colorImages": {
+      "Blanco": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_035.jpg",
+      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_036.jpg",
+      "Gris": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_037.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Polera cómoda para uso diario con algodón suave.",
+    "featured": false
   }
 ]
