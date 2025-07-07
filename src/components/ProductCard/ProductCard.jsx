@@ -35,7 +35,6 @@ export default function ProductCard({ product }) {
       gris: '#9e9e9e',
       rosado: '#f48fb1',
       naranja: '#fb8c00',
-      // agregar más si es necesario
     };
 
     return colorMap[color.toLowerCase()] || color.toLowerCase(); // usa valor literal si no está en el mapa

@@ -8,6 +8,7 @@ export default function FeaturedProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState('all');
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const filters = [
     { id: 'all', label: 'Todos' },
@@ -17,7 +18,8 @@ export default function FeaturedProducts() {
     { id: 'sale', label: 'Ofertas' }
   ];
 
-  // Cargar productos destacados
+  const productsPerPage = 4;
+
   useEffect(() => {
     fetch('/data/products.json')
       .then(res => res.json())
@@ -38,16 +40,14 @@ export default function FeaturedProducts() {
       ? products.filter(p => p.onSale)
       : products.filter(p => p.category === activeFilter);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const productsPerPage = 3;
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % totalPages);
+    setCurrentIndex((prev) => Math.min(prev + 1, totalPages - 1));
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
+    setCurrentIndex((prev) => Math.max(prev - 1, 0));
   };
 
   const visibleProducts = filteredProducts.slice(
@@ -87,42 +87,39 @@ export default function FeaturedProducts() {
           </div>
         </div>
 
-        <Row className="products-row">
-          <Col xs={1} className="d-flex align-items-center justify-content-center">
-            <Button variant="link" className="nav-arrow" onClick={prevSlide} disabled={currentIndex === 0}>
-              <ChevronLeft size={24} />
-            </Button>
-          </Col>
+        <div className="products-slider">
+          <button
+            className="slider-btn prev"
+            onClick={prevSlide}
+            disabled={currentIndex === 0}
+          >
+            <ChevronLeft size={24} />
+          </button>
 
-          <Col xs={10}>
-            <Row className="justify-content-center">
-              {visibleProducts.length > 0 ? (
-                visibleProducts.map(product => (
-                  <Col key={product.id} lg={4} md={6} className="mb-5">
-                    <ProductCard product={product} />
-                  </Col>
-                ))
-              ) : (
-                <Col className="text-center py-5">
-                  <p className="empty-message">No hay productos disponibles en esta categoría</p>
+          <Row className="gx-4">
+            {visibleProducts.length > 0 ? (
+              visibleProducts.map(product => (
+                <Col key={product.id} lg={3} md={4} sm={6} xs={12}>
+                  <ProductCard product={product} />
                 </Col>
-              )}
-            </Row>
-          </Col>
+              ))
+            ) : (
+              <Col className="text-center py-5">
+                <p className="empty-message">No hay productos disponibles en esta categoría</p>
+              </Col>
+            )}
+          </Row>
 
-          <Col xs={1} className="d-flex align-items-center justify-content-center">
-            <Button 
-              variant="link" 
-              className="nav-arrow" 
-              onClick={nextSlide} 
-              disabled={currentIndex >= totalPages - 1}
-            >
-              <ChevronRight size={24} />
-            </Button>
-          </Col>
-        </Row>
+          <button
+            className="slider-btn next"
+            onClick={nextSlide}
+            disabled={currentIndex >= totalPages - 1}
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
 
-        <div className="text-center mt-3">
+        <div className="text-center mt-4">
           <Button variant="outline-dark" className="view-all-btn">
             Ver colección completa
           </Button>
