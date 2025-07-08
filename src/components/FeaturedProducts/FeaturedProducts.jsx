@@ -1,44 +1,45 @@
-import { useState, useEffect } from 'react';
-import ProductCard from '../ProductCard/ProductCard';
-import { Container, Row, Col, Button, Spinner } from 'react-bootstrap';
-import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
-import './FeaturedProducts.css';
+import { useState, useEffect } from "react";
+import ProductCard from "../ProductCard/ProductCard";
+import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
+import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
+import "./FeaturedProducts.css";
 
-export default function FeaturedProducts() {
+export default function FeaturedProducts({ addToCart }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState("all");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const filters = [
-    { id: 'all', label: 'Todos' },
-    { id: 'women', label: 'Mujer' },
-    { id: 'men', label: 'Hombre' },
-    { id: 'kids', label: 'Niños' },
-    { id: 'sale', label: 'Ofertas' }
+    { id: "all", label: "Todos" },
+    { id: "women", label: "Mujer" },
+    { id: "men", label: "Hombre" },
+    { id: "kids", label: "Niños" },
+    { id: "sale", label: "Ofertas" },
   ];
 
   const productsPerPage = 4;
 
   useEffect(() => {
-    fetch('/data/products.json')
-      .then(res => res.json())
-      .then(data => {
-        const destacados = data.filter(p => p.featured);
+    fetch("/data/products.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const destacados = data.filter((p) => p.featured);
         setProducts(destacados);
         setLoading(false);
       })
-      .catch(error => {
-        console.error('Error al cargar productos:', error);
+      .catch((error) => {
+        console.error("Error al cargar productos:", error);
         setLoading(false);
       });
   }, []);
 
-  const filteredProducts = activeFilter === 'all'
-    ? products
-    : activeFilter === 'sale'
-      ? products.filter(p => p.onSale)
-      : products.filter(p => p.category === activeFilter);
+  const filteredProducts =
+    activeFilter === "all"
+      ? products
+      : activeFilter === "sale"
+      ? products.filter((p) => p.onSale)
+      : products.filter((p) => p.category === activeFilter);
 
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
@@ -69,13 +70,17 @@ export default function FeaturedProducts() {
       <Container>
         <div className="section-header">
           <h2 className="section-title">Colecciones Destacadas</h2>
-          <p className="section-subtitle">Descubre nuestras piezas más exclusivas</p>
+          <p className="section-subtitle">
+            Descubre nuestras piezas más exclusivas
+          </p>
 
           <div className="filters-container">
-            {filters.map(filter => (
+            {filters.map((filter) => (
               <button
                 key={filter.id}
-                className={`filter-btn ${activeFilter === filter.id ? 'active' : ''}`}
+                className={`filter-btn ${
+                  activeFilter === filter.id ? "active" : ""
+                }`}
                 onClick={() => {
                   setActiveFilter(filter.id);
                   setCurrentIndex(0);
@@ -98,14 +103,16 @@ export default function FeaturedProducts() {
 
           <Row className="gx-4">
             {visibleProducts.length > 0 ? (
-              visibleProducts.map(product => (
+              visibleProducts.map((product) => (
                 <Col key={product.id} lg={3} md={4} sm={6} xs={12}>
-                  <ProductCard product={product} />
+                  <ProductCard product={product} addToCart={addToCart} />
                 </Col>
               ))
             ) : (
               <Col className="text-center py-5">
-                <p className="empty-message">No hay productos disponibles en esta categoría</p>
+                <p className="empty-message">
+                  No hay productos disponibles en esta categoría
+                </p>
               </Col>
             )}
           </Row>

@@ -1,34 +1,44 @@
-import { Modal, Button } from 'react-bootstrap';
-import { XCircle, ArrowLeft, CreditCard, Bag } from 'react-bootstrap-icons';
-import { useNavigate } from 'react-router-dom';
-import './Cart.css';
+import { Modal, Button } from "react-bootstrap";
+import { XCircle, ArrowLeft, CreditCard, Bag } from "react-bootstrap-icons";
+import { useNavigate } from "react-router-dom";
+import "./Cart.css";
 
-export default function Cart({ show, handleClose, cartItems = [], setCartItems }) {
+export default function Cart({
+  show,
+  handleClose,
+  cartItems = [],
+  setCartItems,
+}) {
   const navigate = useNavigate();
 
   // Validación por si cartItems es undefined o no es array
   const validCartItems = Array.isArray(cartItems) ? cartItems : [];
 
-  const subtotal = validCartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const subtotal = validCartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
   const shipping = 9.99;
   const tax = subtotal * 0.1;
   const total = subtotal + tax + shipping;
 
   const removeItem = (id) => {
-    setCartItems(validCartItems.filter(item => item.id !== id));
+    setCartItems(validCartItems.filter((item) => item.id !== id));
   };
 
   const updateQuantity = (id, newQuantity) => {
     if (newQuantity < 1) return;
-    setCartItems(validCartItems.map(item =>
-      item.id === id ? { ...item, quantity: newQuantity } : item
-    ));
+    setCartItems(
+      validCartItems.map((item) =>
+        item.id === id ? { ...item, quantity: newQuantity } : item
+      )
+    );
   };
 
   return (
-    <Modal 
-      show={show} 
-      onHide={handleClose} 
+    <Modal
+      show={show}
+      onHide={handleClose}
       size="lg"
       className="cart-modal"
       centered
@@ -36,7 +46,7 @@ export default function Cart({ show, handleClose, cartItems = [], setCartItems }
       <Modal.Header className="border-0">
         <div className="d-flex justify-content-between w-100 align-items-center">
           <h2 className="mb-0">Tu Bolsa de Compra</h2>
-          <button 
+          <button
             onClick={handleClose}
             className="close-button"
             aria-label="Cerrar carrito"
@@ -51,9 +61,11 @@ export default function Cart({ show, handleClose, cartItems = [], setCartItems }
           <div className="empty-cart text-center py-5">
             <Bag size={64} className="mb-4 text-muted" />
             <h3 className="mb-3">Tu bolsa está vacía</h3>
-            <p className="text-muted mb-4">Explora nuestras colecciones para encontrar algo especial</p>
-            <Button 
-              variant="outline-dark" 
+            <p className="text-muted mb-4">
+              Explora nuestras colecciones para encontrar algo especial
+            </p>
+            <Button
+              variant="outline-dark"
               onClick={handleClose}
               className="continue-shopping-btn"
             >
@@ -64,11 +76,11 @@ export default function Cart({ show, handleClose, cartItems = [], setCartItems }
         ) : (
           <div className="cart-content">
             <div className="cart-items">
-              {validCartItems.map(item => (
+              {validCartItems.map((item) => (
                 <div key={item.id} className="cart-item">
                   <div className="item-image-container">
-                    <img 
-                      src={item.image} 
+                    <img
+                      src={item.image}
                       alt={item.name}
                       className="item-image"
                     />
@@ -77,7 +89,7 @@ export default function Cart({ show, handleClose, cartItems = [], setCartItems }
                   <div className="item-details">
                     <div className="d-flex justify-content-between">
                       <h4 className="item-name">{item.name}</h4>
-                      <button 
+                      <button
                         onClick={() => removeItem(item.id)}
                         className="remove-item-button"
                         aria-label="Eliminar producto"
@@ -86,29 +98,31 @@ export default function Cart({ show, handleClose, cartItems = [], setCartItems }
                       </button>
                     </div>
 
-                    <p className="item-variants">{item.color} • Talla {item.size}</p>
+                    <p className="item-variants">
+                      {item.color} • Talla {item.size}
+                    </p>
                     <div className="item-price">${item.price.toFixed(2)}</div>
 
                     <div className="quantity-selector">
-                      <button 
-                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      <button
+                        onClick={() =>
+                          updateQuantity(item.id, item.quantity - 1)
+                        }
                         className="quantity-button"
                         aria-label="Reducir cantidad"
                       >
                         -
                       </button>
                       <span className="quantity-value">{item.quantity}</span>
-                      <button 
-                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                      <button
+                        onClick={() =>
+                          updateQuantity(item.id, item.quantity + 1)
+                        }
                         className="quantity-button"
                         aria-label="Aumentar cantidad"
                       >
                         +
                       </button>
-                    </div>
-
-                    <div className="item-total">
-                      ${(item.price * item.quantity).toFixed(2)}
                     </div>
                   </div>
                 </div>
@@ -135,20 +149,20 @@ export default function Cart({ show, handleClose, cartItems = [], setCartItems }
                 <span>${total.toFixed(2)}</span>
               </div>
 
-              <Button 
-                variant="dark" 
+              <Button
+                variant="dark"
                 className="checkout-button"
                 onClick={() => {
                   handleClose();
-                  navigate('/checkout');
+                  navigate("/checkout");
                 }}
               >
                 <CreditCard size={18} className="me-2" />
                 Proceder al pago
               </Button>
 
-              <Button 
-                variant="outline-dark" 
+              <Button
+                variant="outline-dark"
                 onClick={handleClose}
                 className="continue-shopping-btn"
               >

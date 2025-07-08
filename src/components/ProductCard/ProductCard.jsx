@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { toast } from 'react-toastify';
-import { Heart, Eye, Bag } from 'react-bootstrap-icons';
-import ProductModal from '../ProductModal/ProductModal';
-import './ProductCard.css';
+import { useState } from "react";
+import { toast } from "react-toastify";
+import { Heart, Eye, Bag } from "react-bootstrap-icons";
+import ProductModal from "../ProductModal/ProductModal";
+import "./ProductCard.css";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, addToCart }) {
   const [showModal, setShowModal] = useState(false);
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -23,18 +23,18 @@ export default function ProductCard({ product }) {
   // Mapear colores personalizados a valores válidos
   const getColorValue = (color) => {
     const colorMap = {
-      blanco: '#ffffff',
-      negro: '#000000',
-      rojo: '#e53935',
-      azul: '#1e88e5',
-      celeste: '#00bcd4',
-      verde: '#43a047',
-      'verde militar': '#4b5320',
-      beige: '#f5f5dc',
-      marrón: '#795548',
-      gris: '#9e9e9e',
-      rosado: '#f48fb1',
-      naranja: '#fb8c00',
+      blanco: "#ffffff",
+      negro: "#000000",
+      rojo: "#e53935",
+      azul: "#1e88e5",
+      celeste: "#00bcd4",
+      verde: "#43a047",
+      "verde militar": "#4b5320",
+      beige: "#f5f5dc",
+      marrón: "#795548",
+      gris: "#9e9e9e",
+      rosado: "#f48fb1",
+      naranja: "#fb8c00",
     };
 
     return colorMap[color.toLowerCase()] || color.toLowerCase(); // usa valor literal si no está en el mapa
@@ -42,7 +42,7 @@ export default function ProductCard({ product }) {
 
   return (
     <div
-      className={`product-card ${isHovered ? 'hovered' : ''}`}
+      className={`product-card ${isHovered ? "hovered" : ""}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -60,12 +60,14 @@ export default function ProductCard({ product }) {
         {/* Overlay de interacción */}
         <div className="image-overlay">
           <button
-            className={`wishlist-btn ${isWishlisted ? 'active' : ''}`}
+            className={`wishlist-btn ${isWishlisted ? "active" : ""}`}
             onClick={(e) => {
               e.stopPropagation();
               setIsWishlisted(!isWishlisted);
             }}
-            aria-label={isWishlisted ? "Quitar de favoritos" : "Añadir a favoritos"}
+            aria-label={
+              isWishlisted ? "Quitar de favoritos" : "Añadir a favoritos"
+            }
           >
             <Heart size={18} />
           </button>
@@ -97,7 +99,9 @@ export default function ProductCard({ product }) {
       {/* Detalles del producto */}
       <div className="product-details">
         <div className="product-meta">
-          <span className="product-category">{product.category || "Premium"}</span>
+          <span className="product-category">
+            {product.category || "Premium"}
+          </span>
           {product.colors?.length ? (
             <div className="color-indicators">
               {product.colors.slice(0, 3).map((color, index) => (
@@ -112,7 +116,9 @@ export default function ProductCard({ product }) {
           ) : null}
         </div>
 
-        <h3 className="product-title">{product.name || "Producto exclusivo"}</h3>
+        <h3 className="product-title">
+          {product.name || "Producto exclusivo"}
+        </h3>
 
         <div className="price-container">
           {product.onSale ? (
@@ -130,6 +136,14 @@ export default function ProductCard({ product }) {
           aria-label="Añadir al carrito"
           onClick={() => {
             toast.success("✔ Producto agregado al carrito");
+            addToCart({
+              id: product.id,
+              name: product.name,
+              price: salePrice,
+              size: product.sizes?.[0] || "Única",
+              color: product.colors?.[0] || "N/A",
+              image: primaryImage,
+            });
           }}
         >
           <Bag size={16} />
