@@ -49,7 +49,7 @@ export default function ProductModal({ show, handleClose, product }) {
       </Modal.Header>
 
       <Modal.Body className="pt-0">
-        <div className="row g-4">
+        <div className="row g-4 align-items-stretch">
           <div className="col-md-6">
             <div className="product-modal-image-container">
               <img src={mainImage} alt={product.name} className="img-fluid rounded" />
@@ -61,82 +61,84 @@ export default function ProductModal({ show, handleClose, product }) {
             </div>
           </div>
 
-          <div className="col-md-6">
-            <div className="product-details">
-              <h2 className="product-name mb-2">{product.name}</h2>
-              <p className="product-description text-muted mb-4">{product.description}</p>
+          <div className="col-md-6 d-flex flex-column">
+            <div className="product-details flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <h2 className="product-name mb-2">{product.name}</h2>
+                <p className="product-description text-muted mb-4">{product.description}</p>
 
-              <div className="price-section mb-4">
-                <span className="current-price">{formattedPrice}</span>
-                {originalPrice && (
-                  <span className="original-price">{originalPrice}</span>
+                <div className="price-section mb-4">
+                  <span className="current-price">{formattedPrice}</span>
+                  {originalPrice && (
+                    <span className="original-price">{originalPrice}</span>
+                  )}
+                </div>
+
+                {product.colors?.length > 0 && (
+                  <div className="option-section mb-4">
+                    <h6 className="option-title">
+                      Color: <span className="selected-option">{selectedColor}</span>
+                    </h6>
+                    <div className="color-options">
+                      {product.colors.map(color => (
+                        <button
+                          key={color}
+                          className={`color-option ${selectedColor === color ? 'active' : ''}`}
+                          onClick={() => setSelectedColor(color)}
+                          aria-label={`Seleccionar color ${color}`}
+                          style={{
+                            backgroundColor: colorMap[color] || '#ccc',
+                            border: selectedColor === color ? '2px solid #000' : '1px solid #ccc'
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
                 )}
-              </div>
 
-              {product.colors?.length > 0 && (
-                <div className="option-section mb-4">
-                  <h6 className="option-title">
-                    Color: <span className="selected-option">{selectedColor}</span>
-                  </h6>
-                  <div className="color-options">
-                    {product.colors.map(color => (
-                      <button
-                        key={color}
-                        className={`color-option ${selectedColor === color ? 'active' : ''}`}
-                        onClick={() => setSelectedColor(color)}
-                        aria-label={`Seleccionar color ${color}`}
-                        style={{
-                          backgroundColor: colorMap[color] || '#ccc',
-                          border: selectedColor === color ? '2px solid #000' : '1px solid #ccc'
-                        }}
-                      />
-                    ))}
+                {product.sizes?.length > 0 && (
+                  <div className="option-section mb-4">
+                    <h6 className="option-title">
+                      Talla: <span className="selected-option">{selectedSize}</span>
+                    </h6>
+                    <div className="size-options">
+                      {product.sizes.map(size => (
+                        <button
+                          key={size}
+                          className={`size-option ${selectedSize === size ? 'active' : ''}`}
+                          onClick={() => setSelectedSize(size)}
+                          aria-label={`Seleccionar talla ${size}`}
+                        >
+                          {size}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              {product.sizes?.length > 0 && (
                 <div className="option-section mb-4">
-                  <h6 className="option-title">
-                    Talla: <span className="selected-option">{selectedSize}</span>
-                  </h6>
-                  <div className="size-options">
-                    {product.sizes.map(size => (
-                      <button
-                        key={size}
-                        className={`size-option ${selectedSize === size ? 'active' : ''}`}
-                        onClick={() => setSelectedSize(size)}
-                        aria-label={`Seleccionar talla ${size}`}
-                      >
-                        {size}
-                      </button>
-                    ))}
+                  <h6 className="option-title">Cantidad</h6>
+                  <div className="quantity-selector">
+                    <button
+                      className="quantity-button"
+                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                      aria-label="Reducir cantidad"
+                    >
+                      <Dash size={14} />
+                    </button>
+                    <span className="quantity-value">{quantity}</span>
+                    <button
+                      className="quantity-button"
+                      onClick={() => setQuantity(quantity + 1)}
+                      aria-label="Aumentar cantidad"
+                    >
+                      <Plus size={14} />
+                    </button>
                   </div>
-                </div>
-              )}
-
-              <div className="option-section mb-5">
-                <h6 className="option-title">Cantidad</h6>
-                <div className="quantity-selector">
-                  <button
-                    className="quantity-button"
-                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    aria-label="Reducir cantidad"
-                  >
-                    <Dash size={14} />
-                  </button>
-                  <span className="quantity-value">{quantity}</span>
-                  <button
-                    className="quantity-button"
-                    onClick={() => setQuantity(quantity + 1)}
-                    aria-label="Aumentar cantidad"
-                  >
-                    <Plus size={14} />
-                  </button>
                 </div>
               </div>
 
-              <Button variant="dark" className="add-to-cart-button w-100 py-3">
+              <Button variant="dark" className="add-to-cart-button w-100 py-3 mt-4">
                 <Bag size={18} className="me-2" />
                 Añadir al carrito - {formattedPrice}
               </Button>
