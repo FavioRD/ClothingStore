@@ -1,45 +1,26 @@
-import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { XCircle, ArrowLeft, CreditCard, Bag } from 'react-bootstrap-icons';
 import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
-export default function Cart({ show, handleClose }) {
+export default function Cart({ show, handleClose, cartItems = [], setCartItems }) {
   const navigate = useNavigate();
 
-  const [cartItems, setCartItems] = useState([
-    {
-      id: 1,
-      name: 'Camisa formal blanca',
-      price: 59.99,
-      quantity: 2,
-      size: 'M',
-      color: 'Blanco',
-      image: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 2,
-      name: 'Pantalón negro elegante',
-      price: 89.99,
-      quantity: 1,
-      size: '32',
-      color: 'Negro',
-      image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    }
-  ]);
+  // Validación por si cartItems es undefined o no es array
+  const validCartItems = Array.isArray(cartItems) ? cartItems : [];
 
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const subtotal = validCartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const shipping = 9.99;
   const tax = subtotal * 0.1;
   const total = subtotal + tax + shipping;
 
   const removeItem = (id) => {
-    setCartItems(cartItems.filter(item => item.id !== id));
+    setCartItems(validCartItems.filter(item => item.id !== id));
   };
 
   const updateQuantity = (id, newQuantity) => {
     if (newQuantity < 1) return;
-    setCartItems(cartItems.map(item =>
+    setCartItems(validCartItems.map(item =>
       item.id === id ? { ...item, quantity: newQuantity } : item
     ));
   };
@@ -66,7 +47,7 @@ export default function Cart({ show, handleClose }) {
       </Modal.Header>
 
       <Modal.Body>
-        {cartItems.length === 0 ? (
+        {validCartItems.length === 0 ? (
           <div className="empty-cart text-center py-5">
             <Bag size={64} className="mb-4 text-muted" />
             <h3 className="mb-3">Tu bolsa está vacía</h3>
@@ -83,7 +64,7 @@ export default function Cart({ show, handleClose }) {
         ) : (
           <div className="cart-content">
             <div className="cart-items">
-              {cartItems.map(item => (
+              {validCartItems.map(item => (
                 <div key={item.id} className="cart-item">
                   <div className="item-image-container">
                     <img 
