@@ -99,10 +99,10 @@ export default function Checkout() {
                   <DeliveryForm data={formData.delivery} onChange={handleInputChange} />
                 )}
                 {currentStep === 2 && (
-                  <OrderConfirmation formData={formData.delivery} total={total} />
+                  <OrderConfirmation deliveryData={formData.delivery} total={total} />
                 )}
                 {currentStep === 3 && (
-                  <PaymentForm formData={formData.payment} onChange={handleInputChange} total={total} />
+                  <PaymentForm data={formData.payment} onChange={handleInputChange} total={total} />
                 )}
                 {currentStep === 4 && (
                   <FinishOrder formData={formData} total={total} />
