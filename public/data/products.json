@@ -241,12 +241,13 @@
     "onSale": false,
     "category": "men",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_029.jpg"
+      "https://oechsle.vteximg.com.br/arquivos/ids/20178121-1000-1000/2753184_14.jpg?v=638696533124830000",
+      "https://oechsle.vteximg.com.br/arquivos/ids/20178122-1000-1000/2753184_15.jpg?v=638696533127770000"
     ],
-    "colors": ["Azul oscuro", "Negro"],
+    "colors": ["Beige", "Negro"],
     "colorImages": {
-      "Azul oscuro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_029.jpg",
-      "Negro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_030.jpg"
+      "Beige": "https://oechsle.vteximg.com.br/arquivos/ids/20178059-1000-1000/2753196_11.jpg?v=638696533459730000",
+      "Negro": "https://oechsle.vteximg.com.br/arquivos/ids/20178119-1000-1000/2753184_11.jpg?v=638696533113000000"
     },
     "sizes": ["M", "L", "XL"],
     "description": "Chaleco térmico ligero ideal para capas exteriores.",
@@ -260,12 +261,13 @@
     "salePrice": 39.99,
     "category": "kids",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_031.jpg"
+      "https://oechsle.vteximg.com.br/arquivos/ids/20404519-1000-1000/2707694.jpg?v=638735889118300000",
+      "https://oechsle.vteximg.com.br/arquivos/ids/20404537-1000-1000/2707701.jpg?v=638735889671500000"
     ],
-    "colors": ["Rosa", "Celeste"],
+    "colors": ["Rosa", "Beige"],
     "colorImages": {
-      "Rosa": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_031.jpg",
-      "Celeste": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_032.jpg"
+      "Rosa": "https://oechsle.vteximg.com.br/arquivos/ids/20404535-1000-1000/2707701.jpg?v=638735889657300000",
+      "Beige": "https://oechsle.vteximg.com.br/arquivos/ids/20404517-1000-1000/2707694.jpg?v=638735889110770000"
     },
     "sizes": ["4", "6", "8", "10"],
     "description": "Vestido alegre y cómodo para niñas.",
@@ -278,12 +280,13 @@
     "onSale": false,
     "category": "women",
     "images": [
-      "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_033.jpg"
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2015356880228/image2-2015356880228.webp",
+      "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2015356880297/image2-2015356880297.webp"
     ],
-    "colors": ["Beige", "Gris claro"],
+    "colors": ["Rojo", "Verde"],
     "colorImages": {
-      "Beige": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_033.jpg",
-      "Gris claro": "https://lc.fie.umich.mx/~rochoa/BELEMS/SALDOS/H_034.jpg"
+      "Rojo": "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2015356880297/full_image-2015356880297.webp",
+      "Verde": "https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2015356880228/full_image-2015356880228.webp"
     },
     "sizes": ["S", "M", "L", "XL"],
     "description": "Cardigan suave y elegante ideal para entretiempo.",
